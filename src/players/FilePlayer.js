@@ -13,7 +13,7 @@ export default class FilePlayer extends React.Component {
     return (
       <div>
         <Stage />
-        <div className="rplay-controls">
+        <div className="rp-ctrls">
           <PlayButton />
           <Played />
           <Seekbar />

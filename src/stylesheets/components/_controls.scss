@@ -1,5 +1,14 @@
-.rplay-controls {
+.rp-ctrls {
   width: 100%;
   height: 40px;
   background: #eeeeee;
+}
+
+.rp-ctrl {
+  float: left;
+}
+
+.rp-ctrl-icon {
+  width: 32px;
+  height: 32px;
 }
