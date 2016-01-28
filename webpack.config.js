@@ -21,7 +21,17 @@ module.exports = {
         query: {
           presets: ["es2015", "react"]
         }
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"],
+        include: [
+          path.join(__dirname, "src/stylesheets")
+        ]
       }
     ]
+  },
+  sassLoader: {
+    includePath: [path.join(__dirname, "src/stylesheets")]
   }
 };

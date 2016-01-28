@@ -1,6 +1,15 @@
 import React from "react";
-import { MuteButton } from "./Icons";
+import { MuteIconSVG } from "./Icons";
 
-class Mute extends React.Component {
-
+class MuteButton extends React.Component {
+  render() {
+    return (
+      <button className="rp-ctrl rp-ctrl-mute">
+        <MuteIconSVG />
+      </button>
+    )
+  }
 }
+
+
+export default MuteButton;

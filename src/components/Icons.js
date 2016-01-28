@@ -49,3 +49,17 @@ export class PauseIconSVG extends React.Component {
   }
 }
 
+// Mute
+export class MuteIconSVG extends React.Component {
+  shouldComponentUpdate() {
+    return false;
+  }
+
+  render() {
+    return (
+      <ButtonIconSVG>
+        <path d="M0 0 H12 V32 H0 z M20 0 H32 V32 H20 z"></path>
+      </ButtonIconSVG>
+    );
+  }
+}

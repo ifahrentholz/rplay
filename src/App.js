@@ -2,12 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Fileplayer from "./players/FilePlayer";
 
+require("./stylesheets/main.scss");
+
 // set the props
 class App extends React.Component {
-  componentDidMount() {
-    console.log(this.props.setup.urls);
-  }
-
   render() {
     return (
       <Fileplayer />
@@ -15,9 +13,13 @@ class App extends React.Component {
   }
 }
 
+App.propTypes = {
+  setup: React.PropTypes.object
+};
+
 // Instantiate the players
 let addTo = Array.from(document.getElementsByClassName("rplay"));
-addTo.forEach(function(elem) {
-  let data = JSON.parse(elem.dataset.rplaySetup);
-  ReactDOM.render(<App setup={data} />, elem);
+addTo.forEach(function(domNode) {
+  let data = JSON.parse(domNode.dataset.rplaySetup);
+  ReactDOM.render(<App setup={data}/>, domNode);
 });

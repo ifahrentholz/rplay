@@ -1,10 +1,26 @@
 import React from "react";
 
-export class FilePlayer extends React.Component {
+import Stage from "../components/Stage";
+import PlayButton from "../components/PlayButton";
+import Played from "../components/Played";
+import Seekbar from "../components/Seekbar";
+import Duration from "../components/Duration";
+import MuteButton from "../components/MuteButton";
+import VolumeSlider from "../components/Volume";
+
+export default class FilePlayer extends React.Component {
   render() {
     return (
       <div>
-        PlayerMarkup here
+        <Stage />
+        <div className="rplay-controls">
+          <PlayButton />
+          <Played />
+          <Seekbar />
+          <Duration />
+          <MuteButton />
+          <VolumeSlider />
+        </div>
       </div>
     )
   }

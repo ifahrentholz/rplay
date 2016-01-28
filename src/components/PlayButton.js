@@ -1,12 +1,14 @@
 import React from "react";
-import { PlayIconSVG } from "./Icons";
+import { PlayIconSVG, PauseIconSVG } from "./Icons";
 
-export class PlayButton extends React.Component {
+class PlayButton extends React.Component {
   render() {
     return (
-      <div>
+      <button className="rp-ctrl rp-ctrl-play">
         <PlayIconSVG />
-      </div>
+      </button>
     )
   }
 }
+
+export default PlayButton;
