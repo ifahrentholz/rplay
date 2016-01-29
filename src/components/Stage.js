@@ -1,10 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 
-
-class Stage extends React.Component {
+class Stage extends Component {
   render() {
     return (
-      <div>
+      <div className="rp-stage">
         Stage
       </div>
     )
